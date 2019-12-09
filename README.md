@@ -1,4 +1,4 @@
-#Permission
+# Permission
 
 说明：可以下载HPermission，添加到本地项目中、添加好依赖就可以直接使用，不需要添加多余的操作，直接调用。
 
