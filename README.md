@@ -12,23 +12,12 @@
                 .request(new PermissionListener() {
                     @Override
                     public void onSucceed() {
-                        SecVerify.preVerify(new OperationCallback<Void>() {
-                            @Override
-                            public void onComplete(Void data) {
-                                //TODO处理成功的结果
-                                LogUtils.e(data.toString());
-                            }
-                            @Override
-                            public void onFailure(VerifyException e) {
-                                //TODO处理失败的结果
-                                LogUtils.e(e.getMessage());
-                            }
-                        });
+                       // 申请成功回调
                     }
 
                     @Override
                     public void onFiled() {
-
+							// 申请失败回调
                     }
                 });
 ```
